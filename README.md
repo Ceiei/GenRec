@@ -17,29 +17,6 @@ Scaling Generative Recommendation**
 
 ---
 
-## 📢 Announcement
-
-- 2026-01-04 — Regarding the potential discrepancies between the reproduced results based on the Instruct model and our reported metrics, please check whether the CC metric in the evaluation log is non-zero (refer to calc.py). If it is non-zero, it indicates that the model is still generating a large number of invalid items, and constrained decoding has not been successful. We suspect this issue may be related to the versions of dependencies such as the transformer library, and we are still investigating the cause to provide a universal solution. In the meantime, you may switch the Instruct model to a base model, such as Qwen2.5-base, to avoid this problem.
-
-- 2025-12-04 — We update new scripts to support processing the Amazon23 dataset.
-
-- 2025-12-01 — We fix a bug in data.py that could cause the SID–item alignment task to see the answers in advance. This was because we had previously attempted to use partial trajectories to guide the full SID–item generation and does not affect the model performance.
-
-- 2025-11-20 — The SID construction method in **RQ-Kmeans+** has been updated (first proposed in **GPR** and this is the first open-source reproduction).
-
-- 2025-11-19 — We implemented a multi-GPU parallel text-to-embedding method based on Accelerate, which is significantly more efficient than the original version: rq/text2emb/amazon_text2emb.py
-
-- 2025-11-19 — The SID construction method in **constrained-RQ-Kmeans** has been updated.
-
-- 2025-11-07 — Thank you for submitting issues! Based on your feedback, we have released a new implementation. If you encounter any problems while running the code, please update to and consult the **latest version** first.
-  
-- 2025-11-07 — You can now choose to freeze the LLM parameters during the SFT stage and train only the embeddings for the newly added SID vocabulary.
-
-- 2025-10-31 — You can now directly download the implementation **checkpoints** of our MiniOnRec model.
-
-- 2025-10-31 — The SID construction method in **RQ-Kmeans** has been updated.
-
----
 
 ## 🛠️ Key Techniques 
 <div align="center">
@@ -302,40 +279,3 @@ This repository reuses or adapts portions of code from the following open-source
 - [ReRe](https://github.com/sober-clever/ReRe)
 - [LC-Rec](https://github.com/zhengbw0324/LC-Rec)
 
----
-
-## 🔖 Citation <!-- omit in toc -->
-
-If you find our code/paper/model helpful, please consider citing our papers 📝 and staring us ⭐️！
-
-```bib
-@misc{MiniOneRec,
-      title={MiniOneRec: An Open-Source Framework for Scaling Generative Recommendation}, 
-      author={Xiaoyu Kong and Leheng Sheng and Junfei Tan and Yuxin Chen and Jiancan Wu and An Zhang and Xiang Wang and Xiangnan He},
-      year={2025},
-      eprint={2510.24431},
-      archivePrefix={arXiv},
-      primaryClass={cs.IR},
-}
-
-@article{ReRe,
-      title={Reinforced Preference Optimization for Recommendation}, 
-      author={Junfei Tan and Yuxin Chen and An Zhang and Junguang Jiang and Bin Liu and Ziru Xu and Han Zhu and Jian Xu and Bo Zheng and Xiang Wang},
-      journal={arXiv preprint arXiv:2510.12211},
-      year={2025},
-}
-
-@inproceedings{RecZero,
-      title={Think before Recommendation: Autonomous Reasoning-enhanced Recommender}, 
-      author={Xiaoyu Kong and Junguang Jiang and Bin Liu and Ziru Xu and Han Zhu and Jian Xu and Bo Zheng and Jiancan Wu and Xiang Wang},
-      year={2025},
-      booktitle={NeurIPS},
-}
-
-```
-
----
-
-<div align="center">
-We welcome contributions from the community! 🤝
-</div>
