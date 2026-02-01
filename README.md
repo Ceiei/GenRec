@@ -4,7 +4,7 @@
 <img src="./assets/logo.png" width="500em" ></img> 
 
 **An Open-Source Framework for
-Scaling Generative Recommendation**
+Slate Generative Recommendation**
 
 ![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)
 ![License](https://img.shields.io/badge/License-Apache--2.0-green.svg)
