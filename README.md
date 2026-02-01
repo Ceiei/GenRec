@@ -255,21 +255,6 @@ We are actively extending MiniOneRec’s capabilities. The following enhancement
 * ⚙️ **MiniOneRec-Think**: a module that seamlessly integrates dialogue, reasoning, and personalized recommendation, providing an all-in-one solution for complex interactive scenarios.
 * 🔍 **Broader Dataset Support**: additional popular public datasets, including Yelp, to further validate the generality of our algorithms.
 
----
-
-## 🏫 Institutions  <!-- omit in toc -->
-
-This project is developed by the following institutions:
-
-- <img src="assets/lds.png" width="28px"> [LDS](https://data-science.ustc.edu.cn/_upload/tpl/15/04/5380/template5380/index.html)
-- <img src="assets/alphalab.jpg" width="28px"> [AlphaLab](https://alphalab-ustc.github.io/index.html)
-- <img src="assets/next.jpg" width="28px"> [NExT](https://www.nextcenter.org/)
- 
----
-
-## 🧩 Contributing
-
-We welcome and appreciate all contributions! If you have ideas to improve MiniOneRec, please feel free to submit a pull request (PR).
 
 ---
 ## 🙏 Acknowledgements
